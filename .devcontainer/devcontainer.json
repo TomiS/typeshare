@@ -1,0 +1,24 @@
+{
+	"name": "TypeshareDev",
+	"dockerComposeFile": "docker-compose.yml",
+	"remoteEnv": {
+		"USERNAME": "${localEnv:USER}"
+	},
+	"containerUser": "${localEnv:USER}",
+	"remoteUser": "${localEnv:USER}",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.6.5": {
+			"moby": false
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml"
+			]
+		}
+	}
+}
