@@ -8,11 +8,6 @@
 	"remoteUser": "${localEnv:USER}",
 	"service": "devcontainer",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.6.5": {
-			"moby": false
-		}
-	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
