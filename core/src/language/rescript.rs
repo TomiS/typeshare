@@ -2,13 +2,21 @@ use crate::rust_types::Id;
 use crate::RenameExt;
 use crate::{
     language::{Language, SupportedLanguage},
+<<<<<<< HEAD
     parser::{ParsedData, DecoratorKind},
+=======
+    parser::ParsedData,
+>>>>>>> devcontainer
     rust_types::{
         RustConst, RustConstExpr, RustEnum, RustEnumVariant, RustField, RustStruct, RustType,
         RustTypeAlias, RustTypeFormatError, SpecialRustType,
     },
 };
+<<<<<<< HEAD
 use itertools::{Either, Itertools};
+=======
+use itertools::Itertools;
+>>>>>>> devcontainer
 use std::{
     borrow::Cow,
     collections::HashMap,
